@@ -11,11 +11,7 @@ import React, { useState, useEffect } from 'react';
       { id: 3, name: 'Weightlifting', xp: 40, completed: false },
       { id: 4, name: 'Yoga', xp: 25, completed: false },
       { id: 5, name: 'Swimming', xp: 35, completed: false },
-      { id: 6, name: 'Hiking', xp: 30, completed: false },
       { id: 7, name: 'Dancing', xp: 25, completed: false },
-      { id: 8, name: 'Jumping Rope', xp: 20, completed: false },
-      { id: 9, name: 'Pilates', xp: 25, completed: false },
-      { id: 10, name: 'Martial Arts', xp: 40, completed: false },
       // Add more tasks as needed
     ]);
   

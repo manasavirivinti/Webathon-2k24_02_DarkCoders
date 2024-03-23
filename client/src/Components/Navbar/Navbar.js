@@ -4,8 +4,9 @@ import './Navbar.css';
 
 const Navbar = ({ isAuthenticated }) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light navbarcss">
-      <Link className="navbar-brand" to="/user">Fitness App</Link>
+    <nav className="navbar navbar-expand-lg navbarcss">
+      <img src="https://static.vecteezy.com/system/resources/previews/011/161/966/original/fitness-sport-gym-logo-design-vector.jpg" width={"50px"} height={"50px"} className="rounded-circle logo1 mx-2"></img>
+      {/* <Link className="navbar-brand" to="/user">Fitness App</Link> */}
       <button 
         className="navbar-toggler" 
         type="button" 

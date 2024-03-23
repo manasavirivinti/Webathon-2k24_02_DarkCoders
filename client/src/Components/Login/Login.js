@@ -104,7 +104,7 @@ const Login=({setAuth })=>{
     
   }
   useEffect(()=>{
-        //   eslint-disable-next-line no-undef
+        //  eslint-disable-next-line no-undef
     google.accounts.id.initialize({
       client_id: "726221733347-a05g5o8k9ev8fj0eofb0nt9s3k4b8lms.apps.googleusercontent.com",
       callback: handleCallBackResponse
@@ -233,6 +233,8 @@ useEffect(() => {
                     <div className="content">
                         <div className="container">
                             <div className="row justify-content-md-center mt-5" >
+                                
+                            <h1 className="text-center mt-2" style={{fontWeight:"bolder"}}>Login</h1>
                                 <div className="col-md-6 b1 my-2">
                                     <h3 className=" my-3 " style={{color:'black',fontWeight:'bolder'}}>Enter your credentials</h3>
                                     <form onSubmit={onSubmitForm}>
@@ -259,7 +261,7 @@ useEffect(() => {
                                     {error && <div className="alert alert-danger mt-3">{error}</div>}
                                 </div>
                                 <div className="col-md-6 text-center b2" >
-                                    <h3 className="text-center my-3" style={{color:'whitesmoke',fontWeight:'bolder'}}>Using gmail or github</h3>
+                                    <h3 className="text-center my-3" style={{color:'black',fontWeight:'bolder'}}>Using gmail or github</h3>
                                     <div id="signInDiv"></div>
                                     <div>
                                         <button onClick={githublogin} className="btn btn-secondary mt-5" style={{fontWeight:"bolder"}}>

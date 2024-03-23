@@ -98,7 +98,7 @@ const handleStart=()=>{
       const cardExercises = exerciseList.slice(i, i + 5);
       cards.push(
         <div key={i} className="exercise-card">
-          <h3>List {Math.floor(i / 5) + 1}</h3>
+          <h3>Set {Math.floor(i / 5) + 1}</h3>
           <ul>
             {cardExercises.map((exercise, index) => (
               <li key={index}>{exercise}</li>
@@ -127,7 +127,7 @@ const handleStart=()=>{
             {selectedLevel === 'Intermediate' && renderExerciseCards(intermediateExercises)}
             {selectedLevel === 'Hard' && renderExerciseCards(hardExercises)}
             </div>
-            <button className='btn btn-success' onClick={handleStart}>Start Practising</button>
+            {/* <button className='btn btn-success' onClick={handleStart}>Start Practising</button> */}
           
         </div>
       )}

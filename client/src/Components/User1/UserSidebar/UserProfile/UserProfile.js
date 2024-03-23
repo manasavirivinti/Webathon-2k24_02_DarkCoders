@@ -91,8 +91,7 @@ const handleback=()=>{
 
   return (
     <div className='container'>
-      <button className='btn btn-danger mt-3' onClick={handleback}>Back to dashboard</button>
-      <div className="row mt-5 ">
+    <div className="row mt-5 ">
         {/* Personal Details */}
         <div className="col-lg-6 mt-0 m-auto p-0 m-0">
           <h3 className='text-start mb-5'>Personal Details</h3>
@@ -111,6 +110,7 @@ const handleback=()=>{
                     id="name" 
                     defaultValue={userName} 
                     disabled={!editName}
+                    placeholder="kiran"
                     className='border fw-bold text-dark rounded'
                     {...nameForm.register('name' ,{required:true})}
                   />                  
@@ -132,6 +132,7 @@ const handleback=()=>{
                 <div className="col-sm-9 text-start p-0 py-1  m-0">
                   <input 
                     type="text"
+                    placeholder="male"
                     className='border fw-bold text-dark rounded'
                     {...nameForm.register('name' ,{required:true})}
                   />                  
@@ -153,6 +154,7 @@ const handleback=()=>{
                 <div className="col-sm-9 text-start p-0 py-1  m-0">
                   <input 
                     type="number"
+                    placeholder="40"
                     className='border fw-bold text-dark rounded'
                     {...nameForm.register('name' ,{required:true})}
                   />                  
@@ -173,6 +175,7 @@ const handleback=()=>{
                 <div className="col-sm-9 text-start p-0 py-1  m-0">
                   <input 
                     type="number"
+                    placeholder="5.1inches"
                     className='border fw-bold text-dark rounded'
                     {...nameForm.register('name' ,{required:true})}
                   />                  
@@ -193,6 +196,7 @@ const handleback=()=>{
               <div className="col-sm-9  text-start p-0 py-1  m-0  ">
                 <input
                   type="number"
+                  placeholder="60kgs"
                   className='border  fw-bold  text-dark rounded'
                   {...emailForm.register('mail' ,{required:true})}
                 />
@@ -215,6 +219,7 @@ const handleback=()=>{
                 <input 
                   type="number"
                   defaultValue={userMobile} 
+                  placeholder="9866619621"
                   disabled={!editMobile}
                   className='border  fw-bold  text-dark rounded'
                   {...mobileForm.register('mobile' ,{required:true , minLength:10 , maxLength:10 })}

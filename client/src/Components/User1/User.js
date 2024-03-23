@@ -59,7 +59,7 @@ const User = ({ setAuth }) => {
             <video src={videoplay} autoPlay loop muted type='video/mp4' />
             <div className="content mt-5">
                 <div className="container text-center mt-5">
-                <h1 style={{color:"black"}}> Fitness Tracking</h1>
+                <h1 style={{color:"black",fontWeight:"bolder"}}>Healthify</h1>
                 {localStorage.getItem("accessToken") && (
                     <>
                         
@@ -111,17 +111,17 @@ const User = ({ setAuth }) => {
                   </div>
                   <div className="card-footer"> {/* New container for button */}
                     <button className="btn btn-success" onClick={handletrack}>
-                      Start Tracking
+                      Fitness Tracking
                     </button>
                   </div>
                 </div>
                 <div className="card logcard mx-3">
                 <div className="card-body"> {/* New container for content */}
-                    <p style={{fontSize:"20px",fontWeight:"bold"}}>Explore </p>
+                    <p style={{fontSize:"20px",fontWeight:"bold"}}>Explore</p>
                     <img
                       src="https://tse2.mm.bing.net/th?id=OIP.PO7HwGpHbnd3dA0w6JUaHAHaFj&pid=Api&P=0&h=220"
-                      width={"150px"}
-                      height={"130px"}
+                      width={"170px"}
+                      height={"150px"}
                       alt="Diet"
                     />
                   </div>
