@@ -1,0 +1,90 @@
+.fitness-tracker-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .tracker-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .level-progress {
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+  }
+  
+  .rewards {
+    flex-basis: 40%;
+  }
+  
+  .task-list {
+    margin-top: 20px;
+  }
+  
+  .task-list li {
+    margin-bottom: 10px; /* Add spacing between tasks */
+  }
+  
+  .task-button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-button:hover {
+    background-color: #388e3c;
+  }
+  .completed-task {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  /* Add this CSS to your FitnessTracker.css file */
+
+.reward-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .reward-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    animation: rewardPopupAnimation 3s ease-in-out;
+  }
+  
+  @keyframes rewardPopupAnimation {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+    }
+}
